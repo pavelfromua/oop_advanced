@@ -17,7 +17,7 @@ public class Circle extends Shape {
 
     @Override
     public void draw() {
-        System.out.println(String.format("Фигур а: круг, площадь: %.1f кв. ед., " +
+        System.out.println(String.format("Фигура: круг, площадь: %.1f кв. ед., " +
                 "радиус: %.1f ед., цвет: %s", getSquare(), getRadius(), getColorTitle()));
     }
 }
