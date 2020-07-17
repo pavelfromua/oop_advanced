@@ -19,8 +19,8 @@ public class Triangle extends Shape {
 
     @Override
     public void draw() {
-        System.out.println(String.format("Фигура: треугольник, площадь: %.1f кв. ед., " +
-                "длина гипотенузы: %.1f ед., цвет: %s", getSquare(), getHypotenuse(),
+        System.out.println(String.format("Фигура: треугольник, площадь: %.1f кв. ед., "
+                        + "длина гипотенузы: %.1f ед., цвет: %s", getSquare(), getHypotenuse(),
                 getColorTitle()));
     }
 }

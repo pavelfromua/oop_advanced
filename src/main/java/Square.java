@@ -17,7 +17,7 @@ public class Square extends Shape {
 
     @Override
     public void draw() {
-        System.out.println(String.format("Фигура: квадрат, площадь: %.1f кв. ед., " +
-                "длина стороны: %.1f ед., цвет: %s", getSquare(), getSide(), getColorTitle()));
+        System.out.println(String.format("Фигура: квадрат, площадь: %.1f кв. ед., "
+                + "длина стороны: %.1f ед., цвет: %s", getSquare(), getSide(), getColorTitle()));
     }
 }

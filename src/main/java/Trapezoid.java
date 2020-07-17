@@ -21,7 +21,7 @@ public class Trapezoid extends Shape {
 
     @Override
     public void draw() {
-        System.out.println(String.format("Фигура: трапеция, площадь: %.1f кв. ед., " +
-                "средняя линия: %.1f ед., цвет: %s", getSquare(), getMiddleLine(), getColorTitle()));
+        System.out.println(String.format("Фигура: трапеция, площадь: %.1f кв. ед., средняя"
+                + " линия: %.1f ед., цвет: %s", getSquare(), getMiddleLine(), getColorTitle()));
     }
 }

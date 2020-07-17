@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.Random;
 
 public class Main {
-    final static Random random = new Random();
+    static final Random random = new Random();
 
     public static void main(String[] args) {
         Shape[] shapes = new Shape[getNumberOfShapes()];
@@ -23,6 +23,7 @@ public class Main {
                 case 4: shapes[i] = new Trapezoid(Color.values()[getRandomValue(7)],
                         getRandomValue(100), getRandomValue(100), getRandomValue(100));
                         break;
+                default:
             }
         }
 
@@ -44,7 +45,9 @@ public class Main {
             if (!number.isEmpty()) {
                 return Integer.parseInt(number);
             }
-        } catch (IOException e) {}
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         System.out.print("Количество фигур не указано");
 
